@@ -44,7 +44,7 @@ function getSampleData() {
     return [
         {
             id: 'EMP001',
-            name: 'John Doe',
+            name: 'Vivek Kumar',
             department: 'IT',
             designation: 'Software Engineer',
             basicSalary: 5000,
@@ -56,7 +56,7 @@ function getSampleData() {
         },
         {
             id: 'EMP002',
-            name: 'Jane Smith',
+            name: 'Jaskreet Kaur',
             department: 'HR',
             designation: 'HR Manager',
             basicSalary: 6000,
@@ -68,7 +68,7 @@ function getSampleData() {
         },
         {
             id: 'EMP003',
-            name: 'Bob Johnson',
+            name: 'Amit Singh',
             department: 'Finance',
             designation: 'Accountant',
             basicSalary: 4500,
