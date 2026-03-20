@@ -165,21 +165,21 @@ function displayEmployees(filteredEmployees = null) {
     employeesToDisplay.forEach(emp => {
         const row = document.createElement('tr');
         row.innerHTML = `
-            <td>${emp.id}</td>
-            <td>${emp.name}</td>
-            <td>${emp.department}</td>
-            <td>${emp.designation}</td>
-            <td>$${emp.basicSalary.toFixed(2)}</td>
-            <td>$${emp.bonus.toFixed(2)}</td>
-            <td>$${emp.deductions.toFixed(2)}</td>
-            <td><strong>$${emp.netSalary.toFixed(2)}</strong></td>
-            <td>${formatDate(emp.paymentDate)}</td>
-            <td>${emp.paymentMethod}</td>
-            <td>
-                <button onclick="editEmployee('${emp.id}')" class="btn-edit">Edit</button>
-                <button onclick="deleteEmployee('${emp.id}')" class="btn-delete">Delete</button>
-            </td>
-        `;
+     <td>${emp.id}</td>
+     <td>${emp.name}</td>
+     <td>${emp.department}</td>
+     <td>${emp.designation}</td>
+     <td>₹${emp.basicSalary.toFixed(2)}</td>
+     <td>₹${emp.bonus.toFixed(2)}</td>
+     <td>₹${emp.deductions.toFixed(2)}</td>
+     <td><strong>₹${emp.netSalary.toFixed(2)}</strong></td>
+     <td>${formatDate(emp.paymentDate)}</td>
+     <td>${emp.paymentMethod}</td>
+     <td>
+        <button onclick="editEmployee('${emp.id}')" class="btn-edit">Edit</button>
+        <button onclick="deleteEmployee('${emp.id}')" class="btn-delete">Delete</button>
+    </td>
+`;
         tableBody.appendChild(row);
     });
 }
