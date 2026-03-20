@@ -197,8 +197,8 @@ function updateSummaryCards() {
     const avgSalary = totalEmployees > 0 ? totalSalary / totalEmployees : 0;
     
     document.getElementById('totalEmployees').textContent = totalEmployees;
-    document.getElementById('totalSalary').textContent = `$${totalSalary.toFixed(2)}`;
-    document.getElementById('avgSalary').textContent = `$${avgSalary.toFixed(2)}`;
+    document.getElementById('totalSalary').textContent = `₹${totalSalary.toFixed(2)}`;
+    document.getElementById('avgSalary').textContent = `₹${avgSalary.toFixed(2)}`;
 }
 
 // Search employees
