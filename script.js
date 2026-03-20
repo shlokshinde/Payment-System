@@ -42,42 +42,83 @@ function loadFromLocalStorage() {
 // Get sample data for demonstration
 function getSampleData() {
     return [
+        // Get sample data for demonstration
+function getSampleData() {
+    return [
         {
             id: 'EMP001',
-            name: 'Vivek Kumar',
+            name: 'Aarav Sharma',
             department: 'IT',
-            designation: 'Software Engineer',
-            basicSalary: 5000,
-            bonus: 500,
-            deductions: 200,
-            netSalary: 5300,
-            paymentDate: '2024-01-15',
+            designation: 'Senior Software Engineer',
+            basicSalary: 85000,
+            bonus: 10000,
+            deductions: 5000,
+            netSalary: 90000,
+            paymentDate: '2024-03-15',
             paymentMethod: 'Bank Transfer'
         },
         {
             id: 'EMP002',
-            name: 'Jaskreet Kaur',
+            name: 'Priya Patel',
             department: 'HR',
             designation: 'HR Manager',
-            basicSalary: 6000,
-            bonus: 600,
-            deductions: 250,
-            netSalary: 6350,
-            paymentDate: '2024-01-15',
+            basicSalary: 75000,
+            bonus: 8000,
+            deductions: 4000,
+            netSalary: 79000,
+            paymentDate: '2024-03-15',
             paymentMethod: 'Bank Transfer'
         },
         {
             id: 'EMP003',
-            name: 'Amit Singh',
+            name: 'Rahul Verma',
             department: 'Finance',
-            designation: 'Accountant',
-            basicSalary: 4500,
-            bonus: 400,
-            deductions: 180,
-            netSalary: 4720,
-            paymentDate: '2024-01-16',
+            designation: 'Finance Analyst',
+            basicSalary: 65000,
+            bonus: 6000,
+            deductions: 3500,
+            netSalary: 67500,
+            paymentDate: '2024-03-16',
+            paymentMethod: 'Bank Transfer'
+        },
+        {
+            id: 'EMP004',
+            name: 'Neha Gupta',
+            department: 'Marketing',
+            designation: 'Marketing Manager',
+            basicSalary: 70000,
+            bonus: 7000,
+            deductions: 4000,
+            netSalary: 73000,
+            paymentDate: '2024-03-16',
             paymentMethod: 'Check'
+        },
+        {
+            id: 'EMP005',
+            name: 'Vikram Singh',
+            department: 'Operations',
+            designation: 'Operations Head',
+            basicSalary: 90000,
+            bonus: 12000,
+            deductions: 6000,
+            netSalary: 96000,
+            paymentDate: '2024-03-17',
+            paymentMethod: 'Bank Transfer'
+        },
+        {
+            id: 'EMP006',
+            name: 'Anjali Nair',
+            department: 'IT',
+            designation: 'Frontend Developer',
+            basicSalary: 55000,
+            bonus: 5000,
+            deductions: 3000,
+            netSalary: 57000,
+            paymentDate: '2024-03-17',
+            paymentMethod: 'Bank Transfer'
         }
+    ];
+ }
     ];
 }
 
