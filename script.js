@@ -169,10 +169,10 @@ function displayEmployees(filteredEmployees = null) {
      <td>${emp.name}</td>
      <td>${emp.department}</td>
      <td>${emp.designation}</td>
-     <td>₹${emp.basicSalary.toFixed(2)}</td>
-     <td>₹${emp.bonus.toFixed(2)}</td>
-     <td>₹${emp.deductions.toFixed(2)}</td>
-     <td><strong>₹${emp.netSalary.toFixed(2)}</strong></td>
+     <td>${formatIndianRupee(emp.basicSalary)}</td>
+     <td>${formatIndianRupee(emp.bonus)}</td>
+     <td>${formatIndianRupee(emp.deductions)}</td>
+     <td><strong>${formatIndianRupee(emp.netSalary)}</strong></td>
      <td>${formatDate(emp.paymentDate)}</td>
      <td>${emp.paymentMethod}</td>
      <td>
@@ -190,6 +190,11 @@ function formatDate(dateString) {
     return new Date(dateString).toLocaleDateString('en-US', options);
 }
 
+// Format number to Indian Rupee style with commas (₹50,000 instead of ₹50000)
+function formatIndianRupee(amount) {
+    return '₹' + amount.toLocaleString('en-IN');
+}
+
 // Update summary cards
 function updateSummaryCards() {
     const totalEmployees = employees.length;
@@ -197,8 +202,8 @@ function updateSummaryCards() {
     const avgSalary = totalEmployees > 0 ? totalSalary / totalEmployees : 0;
     
     document.getElementById('totalEmployees').textContent = totalEmployees;
-    document.getElementById('totalSalary').textContent = `₹${totalSalary.toFixed(2)}`;
-    document.getElementById('avgSalary').textContent = `₹${avgSalary.toFixed(2)}`;
+    document.getElementById('totalSalary').textContent = formatIndianRupee(totalSalary);
+    document.getElementById('avgSalary').textContent = formatIndianRupee(avgSalary);
 }
 
 // Search employees
